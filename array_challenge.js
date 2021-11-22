@@ -1,3 +1,6 @@
+import { print_desc } from "./module.js";
+import { print_ln } from "./module.js";
+
 // //////////////////////////////////////////////////////////////
 // Coding Dojo > Web Fundamentals > Javascript > Advanced Topics: Array challenges
 // Virgilio D. Cabading Jr.
