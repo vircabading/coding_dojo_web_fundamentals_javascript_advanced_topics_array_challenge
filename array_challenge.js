@@ -50,4 +50,17 @@ function highPass(arr, cutoff) {
 
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 console.log("Result of highPass([6, 8, 3, 10, -2, 5, 9], 5) :: ", result); // we expect back [6, 8, 10, 9]
+print_ln();
 
+// //// BETTER THAN AVERAGE ////////////////////////////////////
+print_desc("Better Than Average");
+print_ln();
+
+
+function reverse(arr) {
+    // your code here
+    return arr;
+}
+   
+var result = reverse(["a", "b", "c", "d", "e"]);
+console.log(result); // we expect back ["e", "d", "c", "b", "a"]

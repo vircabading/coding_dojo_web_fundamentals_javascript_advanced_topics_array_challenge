@@ -28,3 +28,17 @@ function highPass(arr, cutoff) {
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 console.log(result); // we expect back [6, 8, 10, 9]
 ```
+
+3. Better than average
+
+Write a function that will reverse the values an array and return them.
+
+```
+function reverse(arr) {
+    // your code here
+    return arr;
+}
+   
+var result = reverse(["a", "b", "c", "d", "e"]);
+console.log(result); // we expect back ["e", "d", "c", "b", "a"]
+```
