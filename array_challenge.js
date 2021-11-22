@@ -6,13 +6,31 @@ import { print_ln } from "./module.js";
 // Virgilio D. Cabading Jr.
 // //////////////////////////////////////////////////////////////
 
-
+// //// ALWAYS HUNGRY //////////////////////////////////////////
+print_desc("Always Hungry");
+print_ln();
 
 function alwaysHungry(arr) {
-    // your code here 
+    var output = "";
+    var food_found = false;
+
+    for (let idx = 0; idx < arr.length; idx++) {
+        if (arr[idx] == "food") {
+            output += "yummy "
+            food_found = true;
+        }
+    }
+    if (!food_found) {
+        output = "I'm hungry";
+    }
+    return output;
 }
    
-alwaysHungry([3.14, "food", "pie", true, "food"]);
+console.log(alwaysHungry([3.14, "food", "pie", true, "food"]));
 // this should console log "yummy", "yummy"
-alwaysHungry([4, 1, 5, 7, 2]);
+console.log(alwaysHungry([4, 1, 5, 7, 2]));
 // this should console log "I'm hungry"
+print_ln();
+print_ln();
+
+
