@@ -58,3 +58,19 @@ function reverse(arr) {
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // we expect back ["e", "d", "c", "b", "a"]
 ```
+
+5. Fibonacci Array
+
+Write a function that will return an array of Fibonacci numbers up to a given length n
+
+```
+function fibonacciArray(n) {
+    // the [0, 1] are the starting values of the array to calculate the rest from
+    var fibArr = [0, 1];
+    // your code here
+    return fibArr;
+}
+   
+var result = fibonacciArray(10);
+console.log(result); // we expect back [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```

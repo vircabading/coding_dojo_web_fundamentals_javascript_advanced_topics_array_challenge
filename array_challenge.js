@@ -99,3 +99,28 @@ console.log('Result of reverse(["a", "b", "c", "d", "e"]) is', result);
 console.log('Note: expected result is ["e", "d", "c", "b", "a"]');
 print_ln();
 
+// //// FIBONACCI ARRAY ////////////////////////////////////////+
+print_desc("Fibonacci Arraye");
+print_ln();
+
+
+function fibonacciArray(n) {
+    // the [0, 1] are the starting values of the array to calculate the rest from
+    var result = [0, 1];
+    // your code here
+    if (n<=2) {
+        return result;
+    }
+    else {
+        for (let idx=2; idx<n; idx++) {
+            result.push( result[idx-2] + result[idx-1] );
+        }
+    }
+
+    return result;
+}
+   
+var result = fibonacciArray(10);
+
+console.log("Result of fibonacciArray(10) is", result);
+console.log("Expected Result: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]");
