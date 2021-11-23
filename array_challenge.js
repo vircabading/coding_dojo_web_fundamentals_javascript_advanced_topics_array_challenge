@@ -56,6 +56,29 @@ print_ln();
 print_desc("Better Than Average");
 print_ln();
 
+function betterThanAverage(arr) {
+    var sum = 0;
+    // calculate the average
+    for (let idx=0; idx<arr.length; idx++) {
+        sum += arr[idx];
+    }
+    var average = sum / arr.length;
+
+    var count = 0
+    // count how many values are greated than the average
+    for (let idx=0; idx<arr.length; idx++) {
+        if ( arr[idx] >average ) {
+            count++;
+        }
+    }
+
+    return count;
+}
+var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
+
+console.log("Thee result of betterThanAverage([6, 8, 3, 10, -2, 5, 9]) is", result);
+console.log("The expected result is 4"); // we expect back 4
+print_ln();
 
 
 // //// ARRAY REVERSE //////////////////////////////////////////
