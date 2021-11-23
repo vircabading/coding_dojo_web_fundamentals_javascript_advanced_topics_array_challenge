@@ -57,10 +57,22 @@ print_desc("Better Than Average");
 print_ln();
 
 
+
+// //// ARRAY REVERSE //////////////////////////////////////////
+print_desc("Array Reverse");
+print_ln();
+
 function reverse(arr) {
-    // your code here
-    return arr;
+    var new_array = [];
+    for (let idx=0; idx < arr.length; idx++) {
+        new_array.push( arr[ arr.length-idx-1 ] );
+    }
+
+    return new_array;
 }
    
 var result = reverse(["a", "b", "c", "d", "e"]);
-console.log(result); // we expect back ["e", "d", "c", "b", "a"]
+console.log('Result of reverse(["a", "b", "c", "d", "e"]) is', result);
+console.log('Note: expected result is ["e", "d", "c", "b", "a"]');
+print_ln();
+
